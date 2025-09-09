@@ -4,6 +4,10 @@ import App from "./App";
 import "./index.css";
 import { AuthProvider } from "./contexts/authentication";
 import { BrowserRouter } from "react-router-dom";
+import jwtInterceptor from "./utils/jwtInterceptor";
+
+// เรียกใช้ JWT Interceptor
+jwtInterceptor();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
